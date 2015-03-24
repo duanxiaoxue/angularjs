@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app>
+ <head>
+ <script src="./angularg.js"></script>
+ </head>
+ <body>
+ <div ng-controller="MyController">
+ <h1>{{ hello.text }}!</h1>
+ <h1>Hello {{ clock.now }}!</h1>
+ </div>
+
+ <div ng-controller="CommonController">
+ 	 <div ng-controller="Test1Controller">
+ 		<p>{{hello.text}}</p>
+ 		<button ng-click="test1()" >test1</button>
+	    <button ng-click="commonFun()" >commonFun</button>
+ 	 </div>
+
+ 	  <div ng-controller="Test2Controller">
+ 		<p>{{hello.text}}</p>
+ 		<button ng-click="test2()" >test2</button>
+ 	  </div>
+ </div>
+
+	
+
+
+ <script type="text/javascript" src="./app.js"></script>
+ </body>
+</html>
