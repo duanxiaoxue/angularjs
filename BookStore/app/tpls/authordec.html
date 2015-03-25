@@ -1,1 +1,16 @@
-<p>{{desc.text}}</p>
+ <div ng-controller="AuthorListCtrl">
+
+	 <div ng-controller="AuthorDescCtrl">
+
+	 	 
+ 		<p>{{desc.text}}</p>
+
+ 		<ul>
+		    <li ng-repeat="author in authors">
+		        作者:{{author.name}}&nbsp;&nbsp;&nbsp;评价:{{author.comment}}
+		    </li>
+		</ul>
+
+	 </div>
+	
+  </div>

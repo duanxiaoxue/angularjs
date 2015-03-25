@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="UserModule">
+ <head>
+ <script src="./angularg.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+ </head>
+ <body>
+  
+  <div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">双向数据绑定</div>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-12">
+				<form action="" class="form-horizontal" role="form" ng-controller="UserCtrl">
+					<div class="form-group">
+						<label for="" class="col-md-2 control-label">邮箱</label>
+						<div class="col-md-10">
+							<input type="eamil" class="form-control" placeholder="使用126邮箱" ng-model="user.email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="" class="col-md-2 control-label" >密码</label>
+						<div class="col-md-10">
+							<input type="password" class="form-control" placeholder="只能数字字母下划线" ng-model="user.psd">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-md-10">
+							<div class="checkbox">
+								<label for="">
+									<input type="checkbox"  ng-model="user.auto">自动登录
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-md-10">
+							<button class="btn btn-default" ng-click="getData()">获取scope数据</button>
+							<button class="btn btn-default" ng-click="setData('110@dxx.com','dxx345',false)">设置scope数据</button>
+							
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+  </div>
+
+	
+
+
+ <script type="text/javascript" src="./module_compx.js"></script>
+ </body>
+</html>

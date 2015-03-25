@@ -21,6 +21,9 @@ function CommonController($scope) {
  $scope.commonFun=function(){
  	alert("通用功能");
  };
+ $scope.myname={
+	dxx:"你知道我是谁啊"
+ }
   
 }
 
